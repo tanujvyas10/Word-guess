@@ -60,17 +60,19 @@ function App() {
 
   
   return (
-    <>
+    <div>
     <Header/>
     <div className = "game-container">
     <Figure wrongLetters ={ wrongLetters}/>  
+    <div>
     <WrongLetters wrongLetters = {wrongLetters} />
+    </div>
     <Word selectedWord={selectedWord} correctLetter = {correctLetters} />
   
     </div>
     <Popup correctLetters = {correctLetters}  wrongLetters = {correctLetters} selectedWord = {selectedWord} setPlayable= {setPlayable} playAgain = {playAgain}/>
     <Notification showNotification = {showNotification} /> 
-    </>
+    </div>
   );
 }
 
