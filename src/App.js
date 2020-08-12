@@ -70,7 +70,7 @@ function App() {
     <Word selectedWord={selectedWord} correctLetter = {correctLetters} />
   
     </div>
-    <Popup correctLetters = {correctLetters}  wrongLetters = {correctLetters} selectedWord = {selectedWord} setPlayable= {setPlayable} playAgain = {playAgain}/>
+    <Popup correctLetters = {correctLetters}  wrongLetters = {wrongLetters} selectedWord = {selectedWord} setPlayable= {setPlayable} playAgain = {playAgain}/>
     <Notification showNotification = {showNotification} /> 
     </div>
   );
